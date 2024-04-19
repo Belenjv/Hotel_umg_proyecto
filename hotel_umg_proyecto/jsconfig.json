@@ -1,0 +1,12 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Port=3307;Database=hotel_umg;Uid=root;Pwd=123456789;"
+  }
