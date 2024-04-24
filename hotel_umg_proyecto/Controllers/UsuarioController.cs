@@ -30,8 +30,7 @@ namespace hotel_umg_proyecto.Controllers
                 {
                     connection.Open();
 
-                    // Realiza una operación simple, como leer algunos datos de una tabla
-                    string query = "SELECT * FROM usuario"; // Cambia "EjemploTabla" por el nombre de tu tabla
+                    string query = "SELECT * FROM usuario"; 
                     MySqlCommand command = new MySqlCommand(query, connection);
                     MySqlDataReader reader = command.ExecuteReader();
 
