@@ -1,5 +1,6 @@
 ﻿using hotel_umg_proyecto.Models;
 using System;
+using System.Data.Entity.Core;
 using System.Linq;
 using System.Web.Http;
 
@@ -13,8 +14,8 @@ namespace hotel_umg_proyecto.Controllers{
                 var hoteles = _dbContext.Hotel.ToList();
                 return Ok(hoteles);
             }
-            catch (Exception ex) {
-                Console.WriteLine(ex.ToString());
+            catch (EntityException ex) {
+                Console.WriteLine(ex.InnerException.ToString());
                 return InternalServerError();
             }
         }
@@ -26,7 +27,7 @@ namespace hotel_umg_proyecto.Controllers{
                     return NotFound();
                 }
                 return Ok(hotel);
-            }catch (Exception ex) {
+            }catch (EntityException ex) {
                 Console.WriteLine(ex.ToString());
                 return InternalServerError();
             }
@@ -41,7 +42,7 @@ namespace hotel_umg_proyecto.Controllers{
                 _dbContext.Hotel.Add(hotel);
                 _dbContext.SaveChanges();
                 return Ok(hotel);
-            }catch (Exception ex) {
+            }catch (EntityException ex) {
                 Console.WriteLine(ex.ToString());
                 return InternalServerError();
             }
@@ -61,7 +62,7 @@ namespace hotel_umg_proyecto.Controllers{
                 hotelDb.correoElectronico = hotel.correoElectronico;
                 _dbContext.SaveChanges();
                 return Ok(hotelDb);
-            }catch (Exception ex) {
+            }catch (EntityException ex) {
                 Console.WriteLine(ex.ToString());
                 return InternalServerError();
             }
@@ -77,7 +78,7 @@ namespace hotel_umg_proyecto.Controllers{
                 _dbContext.Hotel.Remove(hotelDb);
                 _dbContext.SaveChanges();
                 return Ok(hotelDb);
-            }catch (Exception ex) {
+            }catch (EntityException ex) {
                 Console.WriteLine(ex.ToString());
                 return InternalServerError();
             }
