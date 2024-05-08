@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 
 namespace hotel_umg_proyecto.Models {
-    [Table("hotel")]
+    [Table("Hotel")]
     public class Hotel {
         [Key]
         [Column("id_hotel")]
