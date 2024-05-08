@@ -69,6 +69,8 @@ namespace hotel_umg_proyecto.Controllers{
                 return InternalServerError();
             }
         }
+
+
         [HttpDelete]
         [Route("{idEmpleado}")]
         public IHttpActionResult Delete(int idEmpleado) {
