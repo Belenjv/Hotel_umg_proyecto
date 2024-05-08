@@ -355,8 +355,11 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+
     <Compile Include="Controllers\HabitacionController.cs" />
     <Compile Include="Controllers\EmpleadoController.cs" />
+    <Compile Include="Controllers\detalle_reservacionController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\ReservacionController.cs" />
     <Compile Include="Controllers\TipoHabitacionController.cs" />
@@ -368,6 +371,8 @@
     </Compile>
     <Compile Include="Models\Empleado.cs" />
     <Compile Include="Models\Habitacion.cs" />
+    <Compile Include="Models\detalle_reservacion.cs" />
+    <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Hotel.cs" />
     <Compile Include="Models\HotelUmgContext.cs" />
     <Compile Include="Models\Reservacion.cs" />
