@@ -10,5 +10,8 @@ namespace hotel_umg_proyecto.Models {
         public DbSet<Hotel> Hotel { get; set; }
         public DbSet<Reservacion> Reservacion { get; set; }
         public DbSet<TipoHabitacion> TipoHabitacion { get;set; }
+        public DbSet<Usuario> Usuario { get; set; }
+
+
     }
 }

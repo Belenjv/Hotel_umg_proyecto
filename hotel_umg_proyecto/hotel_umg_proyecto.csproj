@@ -368,6 +368,7 @@
     <Compile Include="Models\HotelUmgContext.cs" />
     <Compile Include="Models\Reservacion.cs" />
     <Compile Include="Models\TipoHabitacion.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
