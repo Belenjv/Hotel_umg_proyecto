@@ -15,12 +15,12 @@ namespace hotel_umg_proyecto.Models {
         public int idDetalleReservacion { get; set; }
 
 
-       // [Column("id_reservacion")]
-        //public string idReservacion { get; set; }
+       [Column("id_reservacion")]
+        public string idReservacion { get; set; }
 
 
-        //[Column("id_habitacion")]
-        //public string idHabitacion { get; set; }
+        [Column("id_habitacion")]
+        public string idHabitacion { get; set; }
 
 
         [Column("fecha_reserva")]
