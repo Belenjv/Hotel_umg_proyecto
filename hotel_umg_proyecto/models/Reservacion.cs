@@ -28,5 +28,14 @@ namespace hotel_umg_proyecto.Models {
         public DateTime fechaFin { get; set;}
         [Column("costo_total")]
         public int costoTotal { get;}
+
+        [ForeignKey("idCliente")]
+        public virtual Cliente Cliente { get; set; }
+
+        [ForeignKey("idEmpleado")]
+        public virtual Empleado Empleado { get; set; }
+
+        [ForeignKey("idHotel")]
+        public virtual Hotel Hotel { get; set; }
     }
 }
