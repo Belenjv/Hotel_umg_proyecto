@@ -7,7 +7,7 @@ using System.Web;
 
 namespace hotel_umg_proyecto.Models
 { [Table("usuario")]
-    public class Usuario  {
+    public class Usuario {
         [Key]
         [Column("id_usuario")]
         public int idUsuario { get; set; }
@@ -19,7 +19,9 @@ namespace hotel_umg_proyecto.Models
         public string password { get; set; }
 
         [Column("id_empleado")]
+        [ForeignKey("Empleado")]
         public int idEmpleado { get; set; }
+        public virtual Empleado Empleado { get; set; } 
 
     }
 }
