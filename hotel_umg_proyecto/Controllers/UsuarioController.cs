@@ -69,6 +69,7 @@ namespace hotel_umg_proyecto.Controllers
                 return InternalServerError();
             }
         }
+
         [Route("{idUsuario}")]
         public IHttpActionResult Put(int idUsuario, [FromBody] Usuario usuario)
         {

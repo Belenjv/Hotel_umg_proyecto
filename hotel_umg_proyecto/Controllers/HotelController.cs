@@ -72,7 +72,8 @@ namespace hotel_umg_proyecto.Controllers{
         public IHttpActionResult Delete(int idHotel) {
             try {
                 var hotelDb = _dbContext.Hotel.Find(idHotel);
-                if(hotelDb == null) {
+                if(hotelDb == null)
+                {
                     return NotFound();
                 }
                 _dbContext.Hotel.Remove(hotelDb);
