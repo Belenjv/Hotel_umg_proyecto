@@ -75,8 +75,8 @@ namespace hotel_umg_proyecto.Controllers
                 {
                     detalle_reservacionDb.idDetalleReservacion = detalles.idDetalleReservacion;
                 }
-               // detalle_reservacionDb.idReservacion = detalles.idReservacion;
-               // detalle_reservacionDb.idHabitacion = detalles.idHabitacion;
+               detalle_reservacionDb.idReservacion = detalles.idReservacion;
+               detalle_reservacionDb.idHabitacion = detalles.idHabitacion;
                 detalle_reservacionDb.fechaReserva = detalles.fechaReserva;
                 _dbContext.SaveChanges();
                 return Ok(detalle_reservacionDb);

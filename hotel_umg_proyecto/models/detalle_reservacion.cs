@@ -15,12 +15,15 @@ namespace hotel_umg_proyecto.Models {
         public int idDetalleReservacion { get; set; }
 
 
-       // [Column("id_reservacion")]
-        //public string idReservacion { get; set; }
+        [Column("id_reservacion")]
+        [ForeignKey("Reservacion")]
+        public int idReservacion { get; set; }
+        public virtual Reservacion Reservacion { get; set; }
 
-
-        //[Column("id_habitacion")]
-        //public string idHabitacion { get; set; }
+        [Column("id_habitacion")]
+        [ForeignKey("Habitacion")]
+        public int idHabitacion { get; set; }
+        public virtual Habitacion Habitacion { get; set; }
 
 
         [Column("fecha_reserva")]

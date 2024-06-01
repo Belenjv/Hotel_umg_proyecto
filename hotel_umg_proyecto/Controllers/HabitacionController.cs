@@ -60,8 +60,8 @@ namespace hotel_umg_proyecto.Controllers{
                 }
                 if (Habitacion.Disponibilidad != 0)
                 {
-                 //   HabitacionDb.idHotel= Habitacion.idHotel;
-                 //   HabitacionDb.idTipoHabitacion = Habitacion.idTipoHabitacion;
+                    HabitacionDb.idHotel= Habitacion.idHotel;
+                    HabitacionDb.idTipoHabitacion = Habitacion.idTipoHabitacion;
                     HabitacionDb.Disponibilidad = Habitacion.Disponibilidad;
                 }
                 _dbContext.SaveChanges();

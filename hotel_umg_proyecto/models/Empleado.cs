@@ -25,9 +25,9 @@ namespace hotel_umg_proyecto.Models {
         [Column("fecha_contratacion")]
         public DateTime fechaContratacion { get; set; }
 
-     //   [Column("id_hotel")]
-       // [Foreign Key("Hotel")]
-       // public int idHotel { get; set; }
-       // public virtual Hotel Hotel { get; set; }
+        [Column("id_hotel")]
+        [ForeignKey("Hotel")]
+        public int idHotel { get; set; }
+        public virtual Hotel Hotel { get; set; }
     }
 }

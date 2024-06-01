@@ -12,15 +12,15 @@ namespace hotel_umg_proyecto.Models {
         [Column("id_habitacion")]
         public int idHabitacion { get; set; }
        
-        //[Column("id_hotel")]
-        // [Foreign Key("Hotel")]
-        // public int idHotel { get; set; }
-        // public virtual Hotel Hotel { get; set; }
+        [Column("id_hotel")]
+        [ForeignKey("Hotel")]
+        public int idHotel { get; set; }
+        public virtual Hotel Hotel { get; set; }
 
-        //[Column("id_tipo_habitacion")]
-        // [Foreign Key("Habitacion")]
-        // public int idTipoHabitacion { get; set; }
-        // public virtual Habitacion Habitacion { get; set; }
+        [Column("id_tipo_habitacion")]
+        [ForeignKey("TipoHabitacion")]
+        public int idTipoHabitacion { get; set; }
+        public virtual TipoHabitacion TipoHabitacion { get; set; }
 
         [Column("disponibilidad")]
         public int Disponibilidad { get; set; }
